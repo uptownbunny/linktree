@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 
 :root {
-    --bgColor: #223344;
+    --bgColor: #15002f;
     --bgColor2: #090a0f;
     --rainbow: linear-gradient(90deg, #f00, rgb(255, 145, 0), #ff0, #0f0, #0aa, #00f, rgb(137, 0, 216), #f00);
-    --accentColor: #FFF;
     --text-color: #f267e8;
-    --link-color: #6a48ba;
-    --bg-color3: #9364ff;
-    --bg-color4: #D445FF;
+    --link-color: #441470;
+
     --font: 'Karla', sans-serif;
     --delay: 3s;
 }
@@ -20,7 +18,7 @@ body {
     font-family: var(--font);
     /* background: radial-gradient(ellipse at bottom, var(--bgColor3) 0%, var(--bgColor4) 100%); */
     opacity: 100;
-    background-image: linear-gradient(#6a48ba, #D445FF);
+    background-image: linear-gradient(#0c0027, #f800d1, #502bb8);
     /* animation: 1s ease-out .5s 1 transitionAnimation; duration/timing-function/delay/iterations/name */
     /* animation-fill-mode: forwards; */
     background-repeat: no-repeat;
@@ -52,7 +50,7 @@ body {
     /*  animation   */
     /* animation-delay: 15s; */
     overflow: hidden;
-    background: linear-gradient(90deg, #fff, #777, #fff);
+    background: linear-gradient(90deg, #fff, #ff00b1, #fff);
     /* background: var(--rainbow); */
     background-repeat: round;
     background-size: 80%;
@@ -69,6 +67,7 @@ body {
     line-height: 1.25;
     display: block;
     font-family: var(--font);
+    font-style: italic;
     max-width: 625px;
     width: auto;
     margin: 27px auto;
