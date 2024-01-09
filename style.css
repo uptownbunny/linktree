@@ -5,6 +5,10 @@
     --bgColor2: #090a0f;
     --rainbow: linear-gradient(90deg, #f00, rgb(255, 145, 0), #ff0, #0f0, #0aa, #00f, rgb(137, 0, 216), #f00);
     --accentColor: #FFF;
+    --text-color: #f267e8;
+    --link-color: #6a48ba;
+    --bg-color3: #9364ff;
+    --bg-color4: #D445FF;
     --font: 'Karla', sans-serif;
     --delay: 3s;
 }
@@ -14,10 +18,11 @@ body {
     padding: 0;
     min-height: 100vh;
     font-family: var(--font);
-    background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
-    opacity: 0;
-    animation: 1s ease-out .5s 1 transitionAnimation; /* duration/timing-function/delay/iterations/name */
-    animation-fill-mode: forwards;
+    /* background: radial-gradient(ellipse at bottom, var(--bgColor3) 0%, var(--bgColor4) 100%); */
+    opacity: 100;
+    background-image: linear-gradient(#6a48ba, #D445FF);
+    /* animation: 1s ease-out .5s 1 transitionAnimation; duration/timing-function/delay/iterations/name */
+    /* animation-fill-mode: forwards; */
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -25,17 +30,17 @@ body {
 
 #profilePicture, #profilePicture img {
     position: relative;
-    width: 128px;
-    height: 128px;
+    width: 150px;
+    height: 150px;
     display: block;
     margin: 40px auto 20px;
-    border-radius: 50%;
-    -webkit-tap-highlight-color: transparent;
+    border-radius: 20%;
+    /* -webkit-tap-highlight-color: transparent; */
 }
 
 #userName {
     color: var(--accentColor);
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 1.25;
     display: block;
@@ -47,8 +52,8 @@ body {
     /*  animation   */
     /* animation-delay: 15s; */
     overflow: hidden;
-    /* background: linear-gradient(90deg, #f00, #0f0, #00f); */
-    background: var(--rainbow);
+    background: linear-gradient(90deg, #fff, #777, #fff);
+    /* background: var(--rainbow); */
     background-repeat: round;
     background-size: 80%;
     animation: animate linear 5s infinite forwards;
@@ -58,8 +63,8 @@ body {
 }
 
 #bio {
-    color: var(--accentColor);
-    font-size: 1rem;
+    color: var(--text-color);
+    font-size: 1.25rem;
     font-weight: bold;
     line-height: 1.25;
     display: block;
@@ -78,7 +83,6 @@ body {
     width: auto;
     display: block;
     margin: 27px auto;
-    transform: rotate(-1.5deg);
 }
 
 /* .raidial-rainbow {
@@ -93,32 +97,34 @@ body {
 
 .link {
     position: relative;
-    background-color: transparent;
-    color: var(--accentColor);
-    border: solid var(--accentColor) 2px;
+    background-color: var(--link-color);
+    color: var(--text-color);
+    /* border: solid var(--accentColor) 2px; */
+    box-shadow: 5px 5px 10px var(--text-color);
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
     text-align: center;
     display: block;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     padding: 10px; /* 17px */
     text-decoration: none;
     /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
-    -webkit-tap-highlight-color: transparent;
+    /* -webkit-tap-highlight-color: transparent; */
 }
 
 @media (hover: hover) {
     .link:hover {
-        background-color: var(--accentColor);
-        color: var(--bgColor);
+        background-color: var(--text-color);
+        color: var(--link-color);
     }
 }
 
 .link:active {
-    background-color: var(--accentColor);
-    color: var(--bgColor);
+    background-color: var(--text-color);
+    color: var(--link-color);
 }
 
 #hashtag {
